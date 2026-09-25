@@ -1,0 +1,24 @@
+{
+  "name": "clothing-store",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Full Stack clothing store project built during the intensive.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "postgresql",
+    "fullstack"
+  ],
+  "author": "Platon Halushka",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pg": "^8.23.0"
+  }
+}
