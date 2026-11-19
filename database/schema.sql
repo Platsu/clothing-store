@@ -3,7 +3,7 @@ CREATE TABLE customers(
     name VARCHAR(50) NOT NULL,
     email VARCHAR(255) NOT NULL,
     password_hash TEXT NOT NULL,
-    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     role VARCHAR(20) NOT NULL DEFAULT 'customer'
                 CONSTRAINT customers_role_check
                     CHECK (role IN('customer', 'admin'))
