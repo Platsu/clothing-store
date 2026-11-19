@@ -50,3 +50,5 @@ VALUES
     ('Logo Cap', 'Adjustable baseball cap.', 500.00, 5),
     ('Canvas Tote Bag', 'Minimal branded tote bag.', 700.00, 5),
     ('Beanie', 'Warm knit beanie.', 450.00, 5);
+
+

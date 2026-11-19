@@ -4,6 +4,9 @@ CREATE TABLE customers(
     email VARCHAR(255) NOT NULL,
     password_hash TEXT NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+    role VARCHAR(20) NOT NULL DEFAULT 'customer'
+                CONSTRAINT customers_role_check
+                    CHECK (role IN('customer', 'admin'))
 );
 
 CREATE UNIQUE INDEX idx_customers_email_lower
